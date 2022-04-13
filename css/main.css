@@ -1,0 +1,97 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 14px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+li{margin-top: 10px;}
+.container {
+    max-width: 800px;
+    margin: auto;
+    height: 100%;
+}
+
+.title {
+    text-align: center;
+    color: #123e91;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sub-title {
+    text-align: center;
+    color: #123e91;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.menu-header {
+    background-color:rgb(2, 116, 78);
+    color: #fff;
+    /* height: 50px;
+    line-height: 50px; */
+    padding: 20px;
+    font-size: 1.4rem;
+    position: relative;
+    cursor: pointer;
+    display: block;
+}
+
+.menu-header:hover {
+    background-color:rgb(47, 150, 10);
+}
+
+.menu-header > div {
+    display: inline-block;
+}
+
+.menu-header > div:last-child {
+    position: absolute;
+    right: 20px;
+    top: 14px;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.menu-header .close-icon {
+    display: none;
+}
+
+.menu-body {
+    padding: 20px;
+    background-color:rgb(15, 207, 143);
+    color: #fff;
+    display: none;
+}
+
+.menu-switch {
+    display: none;
+}
+
+.menu-switch:checked + .menu-header {
+    background-color:rgb(2, 116, 78);
+}
+
+.menu-switch:checked + .menu-header .close-icon {
+    display: inline;
+}
+
+.menu-switch:checked + .menu-header .open-icon {
+    display: none;
+}
+
+.menu-switch:checked ~ .menu-body {
+    display: block;
+}

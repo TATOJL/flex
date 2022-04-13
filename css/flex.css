@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 800px;
+    margin-top:20px ;
+    margin: auto;
+}
+.flex >div{
+    width: 150px;
+    height: 150px;
+    background: rgb(224, 33, 33);
+    margin: 3px;
+    border: 3px blue solid;
+}
+.flex{display: flex;
+    background: rgb(135, 139, 139);
+}
+.fs{
+    justify-content: flex-start;
+}
+.fe{
+    justify-content: flex-end;
+}
+.fc{
+    justify-content: center;
+}
+.fsa{
+    justify-content: space-around;
+}
+.fsb{
+    justify-content: space-between;
+}
+.fse{
+    justify-content: space-evenly;
+}
+.afs{
+    display: flex; align-items: flex-start; justify-content: center; 
+}
+.ac{
+    display: flex; align-items: center; justify-content: center; 
+}
+.afe{
+    display: flex; align-items: flex-end; justify-content: center; 
+}
